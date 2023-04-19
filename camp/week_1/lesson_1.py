@@ -27,4 +27,4 @@ if is_email_valid(email) and is_password_valid(password):
     accounts['email'].append(email)
 
 print(accounts)
-{}.setdefault(2)``~
+{}.setdefault(2)

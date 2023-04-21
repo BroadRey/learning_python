@@ -29,8 +29,8 @@ mask = ['-'] * len(random_country)
 print('Загадана страна! Попробуйте угадать ее название на английском!\n'
       'Если вы 5 раз попробуете отгадать несуществующую в слове букву,' 
       'то игра закончится')
-i = 0
-while i < 5:
+attempts = 0
+while attempts < 5:
     letter = input('Введите букву: ').lower()
     pre_presult = ''.join(mask)
 
@@ -42,7 +42,7 @@ while i < 5:
     if random_country.count(letter) <= 0:
         print('\nВведенной буквы нет в загаданном слове!')
         print('Сейчас слово выглядит так:', pre_presult, end='\n\n')
-        i += 1
+        attempts += 1
         continue
 
     for i, elem in enumerate(random_country):
@@ -71,7 +71,7 @@ print(f'Total amount of tips: {total_tips_amount}$')
 print(f'Total bill: {total_bill}$')
 
 
-integers = [0, 0, 0, 0, 0, 0, 2]
+integers = [0, 0, 0, 1, 0, 0, 1]
 
 for i, elem in enumerate(integers):
     if elem != 0:

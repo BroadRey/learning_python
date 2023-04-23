@@ -6,17 +6,17 @@ i = 0
 while i < len(user_input):
     print(user_input[i])
     i += 1
-    
+
 # task_2
 password = 'secret_password'
 i = 0
 while i < 5:
     user_password = input('Enter your secret password: ')
-    
+
     if user_password == password:
         print('You are successfully logged in!')
         break
-    
+
     i += 1
 else:
     print('You are removed from the system!')
@@ -27,7 +27,7 @@ random_country = choice(countries).lower()
 mask = ['-'] * len(random_country)
 
 print('Загадана страна! Попробуйте угадать ее название на английском!\n'
-      'Если вы 5 раз попробуете отгадать несуществующую в слове букву,' 
+      'Если вы 5 раз попробуете отгадать несуществующую в слове букву,'
       'то игра закончится')
 attempts = 0
 while attempts < 5:
@@ -70,12 +70,12 @@ total_bill = food_price + total_tips_amount
 print(f'Total amount of tips: {total_tips_amount}$')
 print(f'Total bill: {total_bill}$')
 
-
+# task_5
 integers = [0, 0, 0, 1, 0, 0, 1]
 
 for i, elem in enumerate(integers):
     if elem != 0:
-        integers[i] = 1
+        integers[i] += 1
         break
 else:
     print('There are no non-zero entries in the list!')

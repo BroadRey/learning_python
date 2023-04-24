@@ -17,6 +17,9 @@ def merge_lists(*lists) -> list:
 
 
 # task_3
-def print_user_data(**user_data):
+def print_user_data(**user_data) -> None:
+    if not user_data:
+        return
+    
     for key, value in user_data.items():
         print(f'{key.capitalize()}: {value}')

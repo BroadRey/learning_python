@@ -1,5 +1,3 @@
-from curses.ascii import isascii
-
 import emoji
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputFile
